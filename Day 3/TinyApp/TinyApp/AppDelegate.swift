@@ -21,8 +21,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     didFinishLaunchingWithOptions: launchOptions
                 )
         
-        UIStoryboard *
-        
         return true
     }
 
