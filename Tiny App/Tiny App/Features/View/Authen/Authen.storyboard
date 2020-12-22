@@ -126,29 +126,6 @@
             </objects>
             <point key="canvasLocation" x="496" y="190"/>
         </scene>
-        <!--Home View Controller-->
-        <scene sceneID="3SX-4H-aUs">
-            <objects>
-                <viewController storyboardIdentifier="HomeViewController" id="IHI-UM-co3" customClass="HomeViewController" customModule="Tiny_App" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="g7d-CQ-WJA">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MrO-No-1qB">
-                                <rect key="frame" x="106" y="307" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="gzM-dr-XS8"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="d4j-19-BXC"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ieX-b4-4b5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1470" y="235"/>
-        </scene>
     </scenes>
     <resources>
         <image name="fb-icon" width="256" height="256"/>

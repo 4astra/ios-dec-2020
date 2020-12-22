@@ -15,9 +15,7 @@ class LoginViewController: UIViewController {
                 guard let strongSelf = self else {
                     return
                 }
-//
-//
-//                strongSelf.navigationController
+
                 let homeStory = UIStoryboard(name: "Home", bundle: nil)
                 if let homeVC = homeStory.instantiateViewController(identifier: "HomeViewController") as? HomeViewController {
                     
