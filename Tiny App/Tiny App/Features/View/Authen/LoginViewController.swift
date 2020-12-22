@@ -11,7 +11,20 @@ import FBSDKLoginKit
 class LoginViewController: UIViewController {
     var viewModel: SocialViewModel! {
         didSet {
-            
+            self.viewModel.gotoHome = { [weak self] in
+                guard let strongSelf = self else {
+                    return
+                }
+//
+//
+//                strongSelf.navigationController
+                let homeStory = UIStoryboard(name: "Home", bundle: nil)
+                if let homeVC = homeStory.instantiateViewController(identifier: "HomeViewController") as? HomeViewController {
+                    
+                    strongSelf.navigationController?.pushViewController(homeVC, animated: true)
+                }
+                
+            }
         }
     }
     override func viewDidLoad() {

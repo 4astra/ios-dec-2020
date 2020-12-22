@@ -11,6 +11,7 @@ import FBSDKLoginKit
 
 class SocialViewModel {
     weak var viewControler: LoginViewController?
+    var gotoHome:(() -> ())?
     
     init(viewController: LoginViewController) {
         self.viewControler = viewController
@@ -53,6 +54,7 @@ class SocialViewModel {
                 if let token = AccessToken.current {
                     print("FB token: \(token.tokenString)")
                     print("\(result)")
+                    self?.gotoHome?()
                 }
             }
         }

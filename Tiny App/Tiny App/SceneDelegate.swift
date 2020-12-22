@@ -32,8 +32,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScence = (scene as? UIWindowScene) else { return }
         self.window = UIWindow(windowScene: windowScence)
         let story: UIStoryboard = UIStoryboard(name: "Authen", bundle: nil)
-        if let viewcontroller = story.instantiateViewController(identifier: "LoginViewController") as? LoginViewController {
-            window?.rootViewController = viewcontroller
+//        if let viewcontroller = story.instantiateViewController(identifier: "LoginViewController") as? LoginViewController {
+//            window?.rootViewController = viewcontroller
+//               window?.makeKeyAndVisible()
+//        }
+//
+        if let nav = story.instantiateViewController(identifier: "nav1") as? UINavigationController {
+            window?.rootViewController = nav
                window?.makeKeyAndVisible()
         }
     }
