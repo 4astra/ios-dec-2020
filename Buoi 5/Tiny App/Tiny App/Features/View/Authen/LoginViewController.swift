@@ -17,7 +17,7 @@ class LoginViewController: UIViewController {
                 }
 
                 let homeStory = UIStoryboard(name: "Home", bundle: nil)
-                if let homeVC = homeStory.instantiateViewController(identifier: "HomeViewController") as? HomeViewController {
+                if let homeVC = homeStory.instantiateViewController(identifier: "HomeTableViewCtr") as? HomeTableViewCtr {
                     
                     strongSelf.navigationController?.pushViewController(homeVC, animated: true)
                 }

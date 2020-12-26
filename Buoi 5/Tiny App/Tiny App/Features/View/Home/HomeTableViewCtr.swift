@@ -7,6 +7,15 @@
 
 import UIKit
 
+extension Optional {
+    func isNone() -> Bool {
+        guard let _ = self else {
+            return true
+        }
+        return false
+    }
+}
+
 class HomeTableViewCtr: UITableViewController {
     var viewModel: HomeViewModel! {
         didSet {
@@ -23,10 +32,10 @@ class HomeTableViewCtr: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tableView.register(UINib(nibName: "HomeViewCell", bundle: nil), forCellReuseIdentifier: "HomeViewCell")
-        viewModel = HomeViewModel()
         
+        viewModel = HomeViewModel()
         viewModel.fetchAll()
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -43,22 +52,28 @@ class HomeTableViewCtr: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return self.viewModel == nil ? 0 : self.viewModel!.filmsArr.count
+        return self.viewModel.isNone() ? 0 : self.viewModel!.filmsArr.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "HomeViewCell", for: indexPath)
         if let homeCell = cell as? HomeViewCell, let vm = viewModel {
-            homeCell.ibTitle.text = vm.filmsArr[indexPath.row].title
-            homeCell.ibSubTitle.text = vm.filmsArr[indexPath.row].producer
-        }
+            homeCell.ibTitle?.text = vm.filmsArr[indexPath.row].title
+            homeCell.ibSubTitle?.text = vm.filmsArr[indexPath.row].producer
+        }	 
         // Configure the cell...
 
         return cell
     }
 
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
+    }
     
+    override func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 115
+    }
 
     /*
     // Override to support conditional editing of the table view.
