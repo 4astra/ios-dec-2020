@@ -13,6 +13,8 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     @IBOutlet weak var ibTableView: UITableView!
     var viewModel: HomeViewModel! {
         didSet {
+            
+            // Lắng nghe Callback khi reUpdateUI?() đc gọi từ HomeViewModel
             viewModel.reUpdateUI = {
                 [weak self] in
                 guard let strongSelf = self else {
@@ -26,11 +28,15 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Đăng ký 2 Nib cell cho ibTableView - kèm
+        // với tên định danh vô tình trùng với tên Class
         self.ibTableView.register(UINib(nibName: "MyCell", bundle: nil), forCellReuseIdentifier: "MyCell")
         ibTableView.register(UINib(nibName: "OtherTableViewCell", bundle: nil), forCellReuseIdentifier: "OtherTableViewCell")
         
+        // Khởi tạo HomeViewModel
         viewModel = HomeViewModel()
         
+        // Gọi lấy dữ liệu từ API
         viewModel.fetchAll()
     
     }
@@ -38,18 +44,24 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     // MARK: - Table view data source
     
     func numberOfSections(in tableView: UITableView) -> Int {
+        // Table có 2 phần sections
         return 2
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
+        // Chúng ta có thể kiểm tra 2 phần section có
+        // số dòng khác nhau ở đây thông qua biến: section
+        // Do ở đây mặc định cho mỗi phần section có cùng tổng
+        // số dòng
         return self.viewModel == nil ? 0 : self.viewModel!.filmsArr.count
+        // self.viewModel!.filmsArr.count: Tổng số phần tử của mảng
     }
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell: UITableViewCell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "")
         
+        // Phần thứ 1 có section == 0
         if indexPath.section == 0 {
             cell = tableView.dequeueReusableCell(withIdentifier: "MyCell", for: indexPath)
             if let homeCell = cell as? MyCell, let vm = viewModel {
@@ -58,13 +70,14 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
             }
         }
         else {
+            // Phần thứ 1 có section == 1.
+            // Ứng với mỗi phần các bạn có thể dequeue
+            // Tái Sử Dụng Cell theo ý mình
             cell = tableView.dequeueReusableCell(withIdentifier: "OtherTableViewCell", for: indexPath)
             if let homeCell = cell as? OtherTableViewCell, let vm = viewModel {
                 homeCell.ibTitle.text = vm.filmsArr[indexPath.row].title
             }
         }
-        
-        // Configure the cell...
         
         return cell
     }
@@ -72,27 +85,5 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 110
     }
-    //    override func viewDidLoad() {
-    //        super.viewDidLoad()
-    //
-    //        // Do any additional setup after loading the view.
-    //    }
-    //
-    //    @IBAction func doUpdate(_ sender: Any) {
-    //        if let uploadUrl = Bundle.main.url(forResource: "2020-11-12", withExtension: "png") {
-    //            let rawUploadData = try? Data.init(contentsOf: uploadUrl)
-    //            guard let newData = rawUploadData else {
-    //                return
-    //            }
-    //            AF.upload(multipartFormData: { multipart in
-    //                multipart.append(newData, withName: "1", fileName: "2020-11-12.png", mimeType: "image/png")
-    //            }, to: "http://192.168.28.82:8080/api/v1/file/photos")
-    //            .response {
-    //                response in
-    //                print("\(response)")
-    //            }
-    //        }
-    //    }
-    
     
 }
