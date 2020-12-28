@@ -8,6 +8,16 @@
 import UIKit
 import Alamofire
 
+/**
+ // HomeViewController triển khai 2 protocol của Table:
+ // 1. UITableViewDataSource
+ // - Ex: cellForRowAt indexPath...
+ //
+ //
+ // 2. UITableViewDelegate
+ // - Ex: sự kiện click vào cell...
+ */
+
 class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var ibTableView: UITableView!
