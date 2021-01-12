@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SingleOptionCell" rowHeight="92" id="KGk-i7-Jjw" customClass="SingleOptionCell" customModule="Tiny_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="331" height="92"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="331" height="92"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRJ-kD-yxt">
+                        <rect key="frame" x="20" y="23.5" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="2BY-Gl-ctJ"/>
+                            <constraint firstAttribute="width" constant="45" id="w7Z-Pw-dHJ"/>
+                        </constraints>
+                        <state key="normal" image="radio-button-normal"/>
+                        <state key="selected" image="radio-button-selected"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kiF-xa-QRu">
+                        <rect key="frame" x="83" y="10" width="228" height="72"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="kiF-xa-QRu" secondAttribute="bottom" constant="10" id="0Hl-EZ-dDL"/>
+                    <constraint firstItem="eRJ-kD-yxt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" symbolic="YES" id="DDf-0O-CZ4"/>
+                    <constraint firstItem="eRJ-kD-yxt" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="HNU-Yj-c1a"/>
+                    <constraint firstItem="kiF-xa-QRu" firstAttribute="leading" secondItem="eRJ-kD-yxt" secondAttribute="trailing" constant="18" id="Meo-Jm-IEx"/>
+                    <constraint firstItem="kiF-xa-QRu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="VJX-jt-Ndo"/>
+                    <constraint firstAttribute="trailing" secondItem="kiF-xa-QRu" secondAttribute="trailing" constant="20" symbolic="YES" id="rkF-dS-YJe"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="ibSelectBtn" destination="eRJ-kD-yxt" id="KP0-lE-uDC"/>
+                <outlet property="ibTitle" destination="kiF-xa-QRu" id="KvA-z3-nxa"/>
+            </connections>
+            <point key="canvasLocation" x="55.797101449275367" y="103.79464285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="radio-button-normal" width="452" height="452"/>
+        <image name="radio-button-selected" width="226" height="226"/>
+    </resources>
+</document>
