@@ -59,7 +59,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Zd-hw-XvF">
                                 <rect key="frame" x="130.5" y="754" width="153" height="38"/>
-                                <color key="backgroundColor" red="0.93061947820000002" green="0.57172304389999995" blue="0.22362309690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="153" id="7Z9-gD-3uu"/>
                                     <constraint firstAttribute="height" constant="38" id="NDS-RA-NXx"/>
@@ -68,6 +68,11 @@
                                 <state key="normal" title="Go To Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="doLogin:" destination="znA-Hu-Pui" eventType="touchUpInside" id="1JG-ni-P5f"/>
                                 </connections>
