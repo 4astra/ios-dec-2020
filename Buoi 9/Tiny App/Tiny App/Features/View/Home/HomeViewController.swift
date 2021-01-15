@@ -38,6 +38,8 @@ class HomeViewController: BaseViewController, UITableViewDataSource, UITableView
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.title = "My Home Page"
         // Đăng ký 2 Nib cell cho ibTableView - kèm
         // với tên định danh vô tình trùng với tên Class
         self.ibTableView.register(UINib(nibName: "MyCell", bundle: nil), forCellReuseIdentifier: "MyCell")
@@ -88,7 +90,7 @@ class HomeViewController: BaseViewController, UITableViewDataSource, UITableView
             // Tái Sử Dụng Cell theo ý mình
             cell = tableView.dequeueReusableCell(withIdentifier: "OtherTableViewCell", for: indexPath)
             if let homeCell = cell as? OtherTableViewCell, let vm = viewModel {
-                homeCell.ibTitle.text = vm.filmsArr[indexPath.row].desc
+                homeCell.ibDesc.text = vm.filmsArr[indexPath.row].desc
             }
         }
         
