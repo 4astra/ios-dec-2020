@@ -77,10 +77,18 @@
                                     <action selector="doLogin:" destination="znA-Hu-Pui" eventType="touchUpInside" id="1JG-ni-P5f"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tiny-app-logo" translatesAutoresizingMaskIntoConstraints="NO" id="iZJ-yD-wgv">
+                                <rect key="frame" x="57" y="168" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="8aL-I9-maV"/>
+                                    <constraint firstAttribute="height" constant="300" id="lum-HT-ESR"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cXC-2i-wOe"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="iZJ-yD-wgv" firstAttribute="top" secondItem="cXC-2i-wOe" secondAttribute="top" constant="80" id="3ga-aH-7Wt"/>
                             <constraint firstItem="9qC-dy-eFR" firstAttribute="top" secondItem="cXC-2i-wOe" secondAttribute="top" constant="30" id="7UN-fZ-n2D"/>
                             <constraint firstItem="9qC-dy-eFR" firstAttribute="leading" secondItem="cXC-2i-wOe" secondAttribute="leading" constant="25" id="7wi-T5-G34"/>
                             <constraint firstItem="855-TO-9Y2" firstAttribute="leading" secondItem="cXC-2i-wOe" secondAttribute="leading" id="Obx-xx-1ss"/>
@@ -91,6 +99,7 @@
                             <constraint firstItem="cXC-2i-wOe" firstAttribute="trailing" secondItem="855-TO-9Y2" secondAttribute="trailing" id="kMG-ww-Eyb"/>
                             <constraint firstItem="cXC-2i-wOe" firstAttribute="bottom" secondItem="855-TO-9Y2" secondAttribute="bottom" constant="-34" id="keD-cw-k5s"/>
                             <constraint firstItem="cXC-2i-wOe" firstAttribute="bottom" secondItem="iXK-hL-R21" secondAttribute="bottom" constant="20" id="mYt-4U-4ZB"/>
+                            <constraint firstItem="iZJ-yD-wgv" firstAttribute="centerX" secondItem="CeZ-du-3M9" secondAttribute="centerX" id="vX7-jS-SEH"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="CxO-Sb-le6"/>
@@ -197,6 +206,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="tiny-app-logo" width="1250" height="1309.5"/>
         <image name="walkthrough1" width="169.66667175292969" height="242.33332824707031"/>
         <image name="walkthrough2" width="863" height="1265"/>
         <image name="walkthrough3" width="414" height="736"/>

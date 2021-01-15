@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B4085B3F25B155F200BECB59 /* JGProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = B4085B3E25B155F200BECB59 /* JGProgressHUD */; };
 		B410898D25B061D90047D98F /* WalkthroughViewCtr.swift in Sources */ = {isa = PBXBuildFile; fileRef = B410898C25B061D90047D98F /* WalkthroughViewCtr.swift */; };
 		B410899025B062650047D98F /* MyPageViewCtr.swift in Sources */ = {isa = PBXBuildFile; fileRef = B410898F25B062650047D98F /* MyPageViewCtr.swift */; };
 		B418AFAF25A34416000458D9 /* Customize.swift in Sources */ = {isa = PBXBuildFile; fileRef = B418AFAE25A34416000458D9 /* Customize.swift */; };
@@ -91,6 +92,7 @@
 				B4C6EDD325921E510093BB3B /* AlamofireImage in Frameworks */,
 				B4C6EDE62593415C0093BB3B /* IQKeyboardManagerSwift in Frameworks */,
 				B4C6EDEA259341F00093BB3B /* Material in Frameworks */,
+				B4085B3F25B155F200BECB59 /* JGProgressHUD in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +240,7 @@
 				B4C6EDD225921E510093BB3B /* AlamofireImage */,
 				B4C6EDE52593415C0093BB3B /* IQKeyboardManagerSwift */,
 				B4C6EDE9259341F00093BB3B /* Material */,
+				B4085B3E25B155F200BECB59 /* JGProgressHUD */,
 			);
 			productName = "Tiny App";
 			productReference = B44A6629258CCB86002BF8C0 /* Tiny App.app */;
@@ -271,6 +274,7 @@
 				B4C6EDD125921E510093BB3B /* XCRemoteSwiftPackageReference "AlamofireImage" */,
 				B4C6EDE42593415C0093BB3B /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 				B4C6EDE8259341F00093BB3B /* XCRemoteSwiftPackageReference "Material" */,
+				B4085B3D25B155F200BECB59 /* XCRemoteSwiftPackageReference "JGProgressHUD" */,
 			);
 			productRefGroup = B44A662A258CCB86002BF8C0 /* Products */;
 			projectDirPath = "";
@@ -529,6 +533,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		B4085B3D25B155F200BECB59 /* XCRemoteSwiftPackageReference "JGProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JonasGessner/JGProgressHUD";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.0;
+			};
+		};
 		B44A6656258CD466002BF8C0 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/facebook/facebook-ios-sdk";
@@ -564,6 +576,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		B4085B3E25B155F200BECB59 /* JGProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B4085B3D25B155F200BECB59 /* XCRemoteSwiftPackageReference "JGProgressHUD" */;
+			productName = JGProgressHUD;
+		};
 		B44A6657258CD466002BF8C0 /* FacebookLogin */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = B44A6656258CD466002BF8C0 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;

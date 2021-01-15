@@ -28,7 +28,7 @@ class WalkthroughViewCtr: UIViewController {
         if let authBoard = UIStoryboard.instanceWith(name: "Authen"), let loginViewCtr = authBoard.instantiateViewController(identifier: "LoginViewController") as? LoginViewController {
             
             // xóa key login FB để màn hình login có thể xuất hiện
-            UserDefaults.standard.removeObject(forKey: "loginFB")
+            UserDefaults.standard.removeObject(forKey: "loggedIn")
             
             // Trình bày màn hình LoginViewCtr
             navigationController?.present(loginViewCtr, animated: true, completion: nil)

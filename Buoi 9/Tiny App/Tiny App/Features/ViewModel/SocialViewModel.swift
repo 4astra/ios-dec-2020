@@ -7,9 +7,10 @@
 
 import Foundation
 import FBSDKLoginKit
-
+import JGProgressHUD
 
 class SocialViewModel {
+    let hud = JGProgressHUD()
     weak var viewControler: LoginViewController?
     var gotoHome:(() -> ())?
     // Dinh nghia 1 callback to MainTab
@@ -20,6 +21,13 @@ class SocialViewModel {
     }
     
     func tapFBLogin() {
+        //Show ProgressView
+        
+        if let view = viewControler?.view {
+            hud.textLabel.text = "Loading"
+            hud.show(in: view)
+        }
+        
         // 1
         let loginManager = LoginManager()
         
@@ -42,6 +50,7 @@ class SocialViewModel {
             guard error == nil else {
                 // Error occurred
                 print(error!.localizedDescription)
+                self?.hud.dismiss()
                 return
             }
             
@@ -49,6 +58,8 @@ class SocialViewModel {
             // Check for cancel
             guard let result = result, !result.isCancelled else {
                 print("User cancelled login")
+                
+                self?.hud.dismiss()
                 return
             }
             
@@ -56,10 +67,12 @@ class SocialViewModel {
             // 6
             if let token = AccessToken.current {
                 print("FB token: \(token.tokenString)")
-                print("\(result)")
+                //print("\(result)")
                 let userDefault = UserDefaults.standard
-                userDefault.setValue("1", forKey: "loginFB")
-//                self?.gotoHome?()
+                userDefault.setValue("1", forKey: "loggedIn")
+
+                self?.hud.dismiss()
+                
                 self?.gotoMainTab?()
             }
         }

@@ -47,13 +47,7 @@ class LoginViewController: UIViewController {
         let library_path = NSSearchPathForDirectoriesInDomains(.libraryDirectory, .userDomainMask, true)[0]
         
         let userDefault = UserDefaults.standard
-        if let jet = userDefault.string(forKey: "loginFB"), jet == "1" {
-//            let homeStory = UIStoryboard(name: "Home", bundle: nil)
-//            if let homeVC = homeStory.instantiateViewController(identifier: "SurveyViewController") as? SurveyViewController {
-//
-//                self.navigationController?.pushViewController(homeVC, animated: true)
-//            }
-            
+        if let jet = userDefault.string(forKey: "loggedIn"), jet == "1" {
             
             willGoToMainTab()
         }
@@ -62,7 +56,7 @@ class LoginViewController: UIViewController {
     
     @IBAction func loginWithFB(_ sender: Any) {
         let userDefault = UserDefaults.standard
-        guard let _ = userDefault.string(forKey: "loginFB") else {
+        guard let _ = userDefault.string(forKey: "loggedIn") else {
             viewModel.tapFBLogin()
             return
         }
