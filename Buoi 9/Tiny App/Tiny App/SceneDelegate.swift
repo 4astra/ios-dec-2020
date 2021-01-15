@@ -31,18 +31,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let windowScence = (scene as? UIWindowScene) else { return }
         self.window = UIWindow(windowScene: windowScence)
-//        let story: UIStoryboard = UIStoryboard(name: "Authen", bundle: nil)
-//
-//        if let nav = story.instantiateViewController(identifier: "nav1") as? UINavigationController {
-//            window?.rootViewController = nav
-//               window?.makeKeyAndVisible()
-//        }
-        
+
         // load walkthrough storyboard
-        let walthroughStory: UIStoryboard = UIStoryboard(name: "Walkthrough", bundle: nil)
-        
-        if let firstViewCtr = walthroughStory.instantiateInitialViewController() {
-            window?.rootViewController = firstViewCtr
+        if let story = UIStoryboard.instanceWith(name: "Walkthrough"), let viewController = story.instantiateInitialViewController() {
+            window?.rootViewController = viewController
                window?.makeKeyAndVisible()
         }
     }

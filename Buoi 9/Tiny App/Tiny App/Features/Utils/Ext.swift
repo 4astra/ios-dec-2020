@@ -15,3 +15,15 @@ extension UIViewController {
         return delegate
     }
 }
+
+extension UIStoryboard {
+    static func instanceWith(name: String) -> UIStoryboard? {
+        var story: UIStoryboard?
+        do {
+            story = try? UIStoryboard(name: name, bundle: nil)
+        } catch {
+            print("Error")
+        }
+        return story
+    }
+}

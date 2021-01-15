@@ -7,9 +7,8 @@
 
 import UIKit
 
+
 class WalkthroughViewCtr: UIViewController {
-    
-    
     
     @IBOutlet weak var ibPageControl: UIPageControl!
     
@@ -17,13 +16,14 @@ class WalkthroughViewCtr: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func doLogin(_ sender: Any) {
+    
     }
     
     @IBAction func goToPage3(_ sender: Any) {
         myPageViewCtr.scrollToPageIndex(index: 2)
-//        ibPageControl.currentPage = 2
     }
    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

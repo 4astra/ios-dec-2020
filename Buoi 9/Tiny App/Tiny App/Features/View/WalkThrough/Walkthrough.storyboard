@@ -29,24 +29,43 @@
                                 </constraints>
                             </pageControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9qC-dy-eFR">
-                                <rect key="frame" x="185" y="295" width="153" height="30"/>
+                                <rect key="frame" x="25" y="74" width="120" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="AsV-6a-etO"/>
-                                    <constraint firstAttribute="width" constant="153" id="ZAM-tg-NMy"/>
+                                    <constraint firstAttribute="width" constant="120" id="ZAM-tg-NMy"/>
                                 </constraints>
-                                <state key="normal" title="Nhan den Trang Thu 3"/>
+                                <state key="normal" title="Page 3">
+                                    <color key="titleColor" red="0.93061947820000002" green="0.57172304389999995" blue="0.22362309690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="goToPage3:" destination="znA-Hu-Pui" eventType="touchUpInside" id="dYD-eM-NmR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Zd-hw-XvF">
+                                <rect key="frame" x="130.5" y="754" width="153" height="38"/>
+                                <color key="backgroundColor" red="0.93061947820000002" green="0.57172304389999995" blue="0.22362309690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="153" id="7Z9-gD-3uu"/>
+                                    <constraint firstAttribute="height" constant="38" id="NDS-RA-NXx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                <state key="normal" title="Go To Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="doLogin:" destination="znA-Hu-Pui" eventType="touchUpInside" id="1JG-ni-P5f"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cXC-2i-wOe"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="9qC-dy-eFR" firstAttribute="top" secondItem="cXC-2i-wOe" secondAttribute="top" constant="251" id="7UN-fZ-n2D"/>
-                            <constraint firstItem="9qC-dy-eFR" firstAttribute="leading" secondItem="cXC-2i-wOe" secondAttribute="leading" constant="185" id="7wi-T5-G34"/>
+                            <constraint firstItem="9qC-dy-eFR" firstAttribute="top" secondItem="cXC-2i-wOe" secondAttribute="top" constant="30" id="7UN-fZ-n2D"/>
+                            <constraint firstItem="9qC-dy-eFR" firstAttribute="leading" secondItem="cXC-2i-wOe" secondAttribute="leading" constant="25" id="7wi-T5-G34"/>
                             <constraint firstItem="855-TO-9Y2" firstAttribute="leading" secondItem="cXC-2i-wOe" secondAttribute="leading" id="Obx-xx-1ss"/>
+                            <constraint firstItem="iXK-hL-R21" firstAttribute="top" secondItem="2Zd-hw-XvF" secondAttribute="bottom" constant="22" id="aOa-Da-xjP"/>
                             <constraint firstItem="iXK-hL-R21" firstAttribute="centerX" secondItem="CeZ-du-3M9" secondAttribute="centerX" id="ahz-Fy-KoX"/>
+                            <constraint firstItem="2Zd-hw-XvF" firstAttribute="centerX" secondItem="CeZ-du-3M9" secondAttribute="centerX" id="flv-dJ-WOJ"/>
                             <constraint firstItem="855-TO-9Y2" firstAttribute="top" secondItem="CeZ-du-3M9" secondAttribute="top" id="gaY-LT-LIO"/>
                             <constraint firstItem="cXC-2i-wOe" firstAttribute="trailing" secondItem="855-TO-9Y2" secondAttribute="trailing" id="kMG-ww-Eyb"/>
                             <constraint firstItem="cXC-2i-wOe" firstAttribute="bottom" secondItem="855-TO-9Y2" secondAttribute="bottom" constant="-34" id="keD-cw-k5s"/>
