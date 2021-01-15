@@ -16,10 +16,23 @@ class WalkthroughViewCtr: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Ẩn navigation Bar
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
-    @IBAction func doLogin(_ sender: Any) {
     
+    
+    @IBAction func doLogin(_ sender: Any) {
+        
+        if let authBoard = UIStoryboard.instanceWith(name: "Authen"), let loginViewCtr = authBoard.instantiateViewController(identifier: "LoginViewController") as? LoginViewController {
+            
+            // xóa key login FB để màn hình login có thể xuất hiện
+            UserDefaults.standard.removeObject(forKey: "loginFB")
+            
+            // Trình bày màn hình LoginViewCtr
+            navigationController?.present(loginViewCtr, animated: true, completion: nil)
+        }
     }
     
     @IBAction func goToPage3(_ sender: Any) {

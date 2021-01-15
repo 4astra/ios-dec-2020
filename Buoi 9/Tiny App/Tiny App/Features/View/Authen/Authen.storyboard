@@ -101,6 +101,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tiny-app-logo" translatesAutoresizingMaskIntoConstraints="NO" id="EOD-7T-3tr">
+                                <rect key="frame" x="142" y="232" width="130" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="K41-CM-9Py" userLabel="height = 130"/>
+                                    <constraint firstAttribute="width" constant="130" id="zkK-uQ-0Rf" userLabel="width = 130"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="u1w-HP-Qde"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -119,7 +126,9 @@
                             <constraint firstItem="RYq-ln-UQw" firstAttribute="centerX" secondItem="Pzi-up-hdE" secondAttribute="centerX" id="ewF-Qe-FXp"/>
                             <constraint firstItem="Dhu-hM-4z1" firstAttribute="leading" secondItem="6Op-pG-kBK" secondAttribute="leading" constant="20" id="gmq-Dn-MsG"/>
                             <constraint firstItem="J30-Fz-fx8" firstAttribute="leading" secondItem="u1w-HP-Qde" secondAttribute="leading" constant="25" id="hqI-YP-szv"/>
+                            <constraint firstItem="EOD-7T-3tr" firstAttribute="top" secondItem="u1w-HP-Qde" secondAttribute="top" constant="144" id="i86-GR-aUK"/>
                             <constraint firstItem="3XB-5w-uL7" firstAttribute="top" secondItem="UVg-ri-GVg" secondAttribute="bottom" constant="10" id="t2q-XL-Z3J"/>
+                            <constraint firstItem="EOD-7T-3tr" firstAttribute="centerX" secondItem="Pzi-up-hdE" secondAttribute="centerX" id="thp-n3-oBv"/>
                             <constraint firstItem="Dhu-hM-4z1" firstAttribute="centerY" secondItem="6Op-pG-kBK" secondAttribute="centerY" id="yFx-LO-gh9"/>
                         </constraints>
                     </view>
@@ -132,6 +141,7 @@
     </scenes>
     <resources>
         <image name="fb-icon" width="256" height="256"/>
+        <image name="tiny-app-logo" width="1250" height="1309.5"/>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

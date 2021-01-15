@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1ci-Qo-hvy">
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1ci-Qo-hvy">
                                 <rect key="frame" x="128" y="384" width="158" height="128"/>
                                 <color key="backgroundColor" systemColor="systemTealColor"/>
                                 <constraints>
@@ -36,13 +36,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="diE-NE-mhO">
-                                <rect key="frame" x="187" y="563" width="40" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="1YA-DJ-Ycu"/>
-                                    <constraint firstAttribute="width" constant="40" id="p41-WK-oIO"/>
-                                </constraints>
-                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -51,10 +44,8 @@
                             <constraint firstItem="1ci-Qo-hvy" firstAttribute="top" secondItem="GXX-Q0-LCb" secondAttribute="bottom" constant="48" id="HdW-bQ-MvP"/>
                             <constraint firstItem="1ci-Qo-hvy" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="dqL-cJ-a6I"/>
                             <constraint firstItem="TWU-Az-X2d" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="h4R-cJ-GZ7"/>
-                            <constraint firstItem="diE-NE-mhO" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="hpU-y0-QdJ"/>
                             <constraint firstItem="1ci-Qo-hvy" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="l79-R6-cac"/>
                             <constraint firstItem="TWU-Az-X2d" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="tGJ-m1-Tu5"/>
-                            <constraint firstItem="diE-NE-mhO" firstAttribute="top" secondItem="1ci-Qo-hvy" secondAttribute="bottom" constant="51" id="z6d-DZ-TTa"/>
                         </constraints>
                     </view>
                 </viewController>
