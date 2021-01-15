@@ -19,7 +19,7 @@ class LoginViewController: UIViewController {
                 guard let strongSelf = self else {
                     return
                 }
-
+                
                 let homeStory = UIStoryboard(name: "Home", bundle: nil)
                 if let homeVC = homeStory.instantiateViewController(identifier: "SurveyViewController") as? SurveyViewController {
                     
@@ -34,7 +34,7 @@ class LoginViewController: UIViewController {
         let homeStory = UIStoryboard(name: "Home", bundle: nil)
         if let tabBarCtrl = homeStory.instantiateViewController(identifier: "mainTab") as? UITabBarController {
             
-//            self.navigationController?.pushViewController(tabBarCtrl, animated: true)
+            //            self.navigationController?.pushViewController(tabBarCtrl, animated: true)
             // Xet lai root view bang TabBar Controoler
             sceneDelegate?.window?.rootViewController = tabBarCtrl
         }
@@ -54,6 +54,10 @@ class LoginViewController: UIViewController {
         print("library path is \(library_path)")
     }
     
+    @IBAction func doLogin(_ sender: Any) {
+        self.willGoToMainTab()
+    }
+    
     @IBAction func loginWithFB(_ sender: Any) {
         let userDefault = UserDefaults.standard
         guard let _ = userDefault.string(forKey: "loggedIn") else {
@@ -66,8 +70,8 @@ class LoginViewController: UIViewController {
             
             self.navigationController?.pushViewController(homeVC, animated: true)
         }
-        }
-        
     }
     
+}
+
 

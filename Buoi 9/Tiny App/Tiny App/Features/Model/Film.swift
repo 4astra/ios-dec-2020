@@ -14,7 +14,8 @@ struct Film: Decodable {
     let title: String
     let producer: String
     let releaseDate: String
-    let starships: [String]
+    let desc: String
+//    let starships: [String]
     
     
     // CodingKeys:
@@ -24,7 +25,8 @@ struct Film: Decodable {
     enum CodingKeys: String, CodingKey {
         case releaseDate = "release_date"// key để parse khác với tên biến mô tả
         case title
-        case starships
+//        case starships
         case producer
+        case desc = "opening_crawl"
     }
 }

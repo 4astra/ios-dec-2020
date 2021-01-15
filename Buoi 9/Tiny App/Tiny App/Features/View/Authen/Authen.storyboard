@@ -103,6 +103,9 @@
                                         <color key="value" systemColor="systemOrangeColor"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="doLogin:" destination="Hxt-is-sYS" eventType="touchUpInside" id="qEA-uq-JbG"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RYq-ln-UQw" customClass="TextField" customModule="Material">
                                 <rect key="frame" x="25" y="645" width="364" height="45"/>

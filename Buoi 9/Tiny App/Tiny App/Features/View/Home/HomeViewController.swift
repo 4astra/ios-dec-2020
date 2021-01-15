@@ -88,7 +88,7 @@ class HomeViewController: BaseViewController, UITableViewDataSource, UITableView
             // Tái Sử Dụng Cell theo ý mình
             cell = tableView.dequeueReusableCell(withIdentifier: "OtherTableViewCell", for: indexPath)
             if let homeCell = cell as? OtherTableViewCell, let vm = viewModel {
-                homeCell.ibTitle.text = vm.filmsArr[indexPath.row].title
+                homeCell.ibTitle.text = vm.filmsArr[indexPath.row].desc
             }
         }
         

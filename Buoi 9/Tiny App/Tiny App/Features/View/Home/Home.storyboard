@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home-->
+        <!--Home Navigation-->
         <scene sceneID="baW-9N-xes">
             <objects>
-                <navigationController id="UPL-XO-E8C" sceneMemberID="viewController">
+                <navigationController id="UPL-XO-E8C" userLabel="Home Navigation" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" id="K2O-dH-Mp4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="pSL-62-pjA">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -115,10 +115,10 @@
             </objects>
             <point key="canvasLocation" x="2604" y="426"/>
         </scene>
-        <!--Survey-->
+        <!--Survey Navigation-->
         <scene sceneID="GII-w9-CGg">
             <objects>
-                <navigationController id="zKJ-71-NAm" sceneMemberID="viewController">
+                <navigationController id="zKJ-71-NAm" userLabel="Survey Navigation" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Survey" id="A0R-dW-8c1"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="SlU-gz-iDW">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
