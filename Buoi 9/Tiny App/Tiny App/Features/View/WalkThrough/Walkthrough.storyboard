@@ -23,7 +23,7 @@
                                 </connections>
                             </containerView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="iXK-hL-R21">
-                                <rect key="frame" x="145.5" y="804" width="123" height="28"/>
+                                <rect key="frame" x="145.5" y="814" width="123" height="28"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="28" id="Ald-D9-Gb6"/>
                                 </constraints>
@@ -50,7 +50,7 @@
                             <constraint firstItem="855-TO-9Y2" firstAttribute="top" secondItem="CeZ-du-3M9" secondAttribute="top" id="gaY-LT-LIO"/>
                             <constraint firstItem="cXC-2i-wOe" firstAttribute="trailing" secondItem="855-TO-9Y2" secondAttribute="trailing" id="kMG-ww-Eyb"/>
                             <constraint firstItem="cXC-2i-wOe" firstAttribute="bottom" secondItem="855-TO-9Y2" secondAttribute="bottom" constant="-34" id="keD-cw-k5s"/>
-                            <constraint firstItem="cXC-2i-wOe" firstAttribute="bottom" secondItem="iXK-hL-R21" secondAttribute="bottom" constant="30" id="mYt-4U-4ZB"/>
+                            <constraint firstItem="cXC-2i-wOe" firstAttribute="bottom" secondItem="iXK-hL-R21" secondAttribute="bottom" constant="20" id="mYt-4U-4ZB"/>
                         </constraints>
                     </view>
                     <connections>
@@ -68,6 +68,7 @@
                     <view key="view" contentMode="scaleToFill" id="je4-Y6-IdH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Z5f-Fg-uXK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
@@ -82,13 +83,24 @@
                     <view key="view" contentMode="scaleToFill" id="I4V-rB-CNt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="walkthrough1" translatesAutoresizingMaskIntoConstraints="NO" id="7ch-wY-d5X">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Lbq-Sp-Wmq"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="7ch-wY-d5X" firstAttribute="top" secondItem="I4V-rB-CNt" secondAttribute="top" id="FHY-eT-3Gv"/>
+                            <constraint firstAttribute="bottom" secondItem="7ch-wY-d5X" secondAttribute="bottom" id="XeJ-Tz-hJn"/>
+                            <constraint firstItem="7ch-wY-d5X" firstAttribute="trailing" secondItem="Lbq-Sp-Wmq" secondAttribute="trailing" id="shi-vm-BVv"/>
+                            <constraint firstItem="7ch-wY-d5X" firstAttribute="leading" secondItem="Lbq-Sp-Wmq" secondAttribute="leading" id="yXQ-WE-Btt"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CST-Xv-V9J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="156.52173913043478" y="-591.29464285714278"/>
+            <point key="canvasLocation" x="155.07246376811597" y="-591.29464285714278"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="yFV-gD-M6Y">
@@ -97,13 +109,24 @@
                     <view key="view" contentMode="scaleToFill" id="neC-Zw-Fsx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="walkthrough2" translatesAutoresizingMaskIntoConstraints="NO" id="41L-FN-6eD">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="P86-ge-Ple"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="41L-FN-6eD" firstAttribute="top" secondItem="neC-Zw-Fsx" secondAttribute="top" id="a0Y-3Z-Ocp"/>
+                            <constraint firstAttribute="bottom" secondItem="41L-FN-6eD" secondAttribute="bottom" id="bS6-aq-xNs"/>
+                            <constraint firstItem="41L-FN-6eD" firstAttribute="leading" secondItem="P86-ge-Ple" secondAttribute="leading" id="knd-uM-de3"/>
+                            <constraint firstItem="41L-FN-6eD" firstAttribute="trailing" secondItem="P86-ge-Ple" secondAttribute="trailing" id="nLU-8C-NhC"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hrs-ph-9yl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="920" y="-599"/>
+            <point key="canvasLocation" x="918.84057971014499" y="-599.33035714285711"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hns-tv-d3X">
@@ -112,16 +135,30 @@
                     <view key="view" contentMode="scaleToFill" id="PSs-Aa-RNK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="walkthrough3" translatesAutoresizingMaskIntoConstraints="NO" id="Hzp-yW-QQJ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="hIg-a7-ds3"/>
                         <color key="backgroundColor" systemColor="systemPinkColor"/>
+                        <constraints>
+                            <constraint firstItem="Hzp-yW-QQJ" firstAttribute="top" secondItem="PSs-Aa-RNK" secondAttribute="top" id="Av0-Cw-xsF"/>
+                            <constraint firstItem="Hzp-yW-QQJ" firstAttribute="leading" secondItem="hIg-a7-ds3" secondAttribute="leading" id="lRi-0E-0Ts"/>
+                            <constraint firstItem="Hzp-yW-QQJ" firstAttribute="trailing" secondItem="hIg-a7-ds3" secondAttribute="trailing" id="tLm-gi-Tn3"/>
+                            <constraint firstAttribute="bottom" secondItem="Hzp-yW-QQJ" secondAttribute="bottom" id="zdd-sU-P62"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e7O-nI-3ak" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1761" y="-615"/>
+            <point key="canvasLocation" x="1760.8695652173915" y="-615.40178571428567"/>
         </scene>
     </scenes>
     <resources>
+        <image name="walkthrough1" width="169.66667175292969" height="242.33332824707031"/>
+        <image name="walkthrough2" width="863" height="1265"/>
+        <image name="walkthrough3" width="414" height="736"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

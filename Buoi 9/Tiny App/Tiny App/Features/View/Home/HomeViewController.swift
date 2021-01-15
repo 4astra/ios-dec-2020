@@ -49,20 +49,7 @@ class HomeViewController: BaseViewController, UITableViewDataSource, UITableView
         // Gọi lấy dữ liệu từ API
         viewModel.fetchAll()
         
-        // Customize lai cai icon cua TabBar
-        // cho tam anh co 2 trang thai: selected & normal
-//        if let items = tabBarController?.tabBar.items {
-//
-//            let selectedImgs: [UIImage] = [UIImage(named: "tab-0-sel")!, UIImage(named: "tab-1-sel")!]
-//            let normalImgs: [UIImage] = [UIImage(named: "tab-0")!, UIImage(named: "tab-1")!]
-//
-//            for i in 0..<items.count {
-//                let tabBarItem = items[i]
-//                tabBarItem.selectedImage = selectedImgs[i]
-//                tabBarItem.image = normalImgs[i]
-//            }
-//
-//        }
+        // customize tab bar item
         setImageForTabBar()
     
     }

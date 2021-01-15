@@ -36,11 +36,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 //        if let nav = story.instantiateViewController(identifier: "nav1") as? UINavigationController {
 //            window?.rootViewController = nav
 //               window?.makeKeyAndVisible()
+//        }
         
         // load walkthrough storyboard
-        let story: UIStoryboard = UIStoryboard(name: "Walkthrough", bundle: nil)
-
-        if let firstViewCtr = story.instantiateInitialViewController() {
+        let walthroughStory: UIStoryboard = UIStoryboard(name: "Walkthrough", bundle: nil)
+        
+        if let firstViewCtr = walthroughStory.instantiateInitialViewController() {
             window?.rootViewController = firstViewCtr
                window?.makeKeyAndVisible()
         }

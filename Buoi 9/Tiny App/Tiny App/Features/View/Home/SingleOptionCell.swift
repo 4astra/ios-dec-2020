@@ -13,16 +13,6 @@ protocol SingleOptionCellDelegate {
     func willClickAt(indexPath: IndexPath)
 }
 
-struct ABC {
-    let i = 1
-}
-
-extension ABC: SingleOptionCellDelegate {
-    func willClickAt(indexPath: IndexPath) {
-        
-    }
-}
-
 class SingleOptionCell: UITableViewCell {
     // Luu dong IndexPath thu i
     var indexPath: IndexPath!
