@@ -5,6 +5,11 @@
 //  Created by Hockey on 12/21/20.
 //
 
+// endpoint
+/**
+ https://jsonblob.com/api/5ee10e1b-5711-11eb-9d21-f3eadbf4aac5
+ */
+
 import UIKit
 import Alamofire
 
