@@ -31,6 +31,8 @@
 		B460F44A259A0D4400972969 /* SurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B460F449259A0D4400972969 /* SurveyViewController.swift */; };
 		B460F44D259A0F9100972969 /* SingleOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = B460F44C259A0F9100972969 /* SingleOption.swift */; };
 		B460F450259A15FE00972969 /* SurveyResultViewCtr.swift in Sources */ = {isa = PBXBuildFile; fileRef = B460F44F259A15FE00972969 /* SurveyResultViewCtr.swift */; };
+		B46A2EF625B5DD3000723357 /* MapViewCtr.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46A2EF525B5DD3000723357 /* MapViewCtr.swift */; };
+		B46A2EF925B5EC9E00723357 /* Pin.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46A2EF825B5EC9E00723357 /* Pin.swift */; };
 		B46AE71D25AC6CB1004CF12B /* MemCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46AE71C25AC6CB1004CF12B /* MemCache.swift */; };
 		B46AE72025AC7B7C004CF12B /* Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46AE71F25AC7B7C004CF12B /* Ext.swift */; };
 		B4C6EDD325921E510093BB3B /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = B4C6EDD225921E510093BB3B /* AlamofireImage */; };
@@ -76,6 +78,8 @@
 		B460F449259A0D4400972969 /* SurveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyViewController.swift; sourceTree = "<group>"; };
 		B460F44C259A0F9100972969 /* SingleOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleOption.swift; sourceTree = "<group>"; };
 		B460F44F259A15FE00972969 /* SurveyResultViewCtr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyResultViewCtr.swift; sourceTree = "<group>"; };
+		B46A2EF525B5DD3000723357 /* MapViewCtr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewCtr.swift; sourceTree = "<group>"; };
+		B46A2EF825B5EC9E00723357 /* Pin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pin.swift; sourceTree = "<group>"; };
 		B46AE71C25AC6CB1004CF12B /* MemCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemCache.swift; sourceTree = "<group>"; };
 		B46AE71F25AC7B7C004CF12B /* Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ext.swift; sourceTree = "<group>"; };
 		B4C6EDEF25936EA10093BB3B /* HomeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewCell.swift; sourceTree = "<group>"; };
@@ -177,6 +181,7 @@
 				B460F449259A0D4400972969 /* SurveyViewController.swift */,
 				B460F44F259A15FE00972969 /* SurveyResultViewCtr.swift */,
 				B418AFB125A349FE000458D9 /* BaseViewController.swift */,
+				B46A2EF525B5DD3000723357 /* MapViewCtr.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -208,6 +213,7 @@
 				B460F44C259A0F9100972969 /* SingleOption.swift */,
 				B4C799D225B32563000D1430 /* StarShip.swift */,
 				B4C799D525B32791000D1430 /* StarShips.swift */,
+				B46A2EF825B5EC9E00723357 /* Pin.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -340,6 +346,7 @@
 				B460F44D259A0F9100972969 /* SingleOption.swift in Sources */,
 				B418AFB225A349FE000458D9 /* BaseViewController.swift in Sources */,
 				B4C6EDF9259372AD0093BB3B /* HomeViewModel.swift in Sources */,
+				B46A2EF925B5EC9E00723357 /* Pin.swift in Sources */,
 				B4C799D625B32791000D1430 /* StarShips.swift in Sources */,
 				B4C6EDF6259371B60093BB3B /* Films.swift in Sources */,
 				B460F446259A0ABC00972969 /* SingleOptionCell.swift in Sources */,
@@ -354,6 +361,7 @@
 				B460F441259A039A00972969 /* OtherTableViewCell.swift in Sources */,
 				B46AE72025AC7B7C004CF12B /* Ext.swift in Sources */,
 				B4C799D325B32563000D1430 /* StarShip.swift in Sources */,
+				B46A2EF625B5DD3000723357 /* MapViewCtr.swift in Sources */,
 				B4C6EDFE25937E990093BB3B /* MyCell.swift in Sources */,
 				B4C799D025B30AB7000D1430 /* CategoryCollectionCell.swift in Sources */,
 				B46AE71D25AC6CB1004CF12B /* MemCache.swift in Sources */,
@@ -507,13 +515,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FFAZKGAE8E;
 				INFOPLIST_FILE = "Tiny App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.construct.foodhero;
+				PRODUCT_BUNDLE_IDENTIFIER = "run.hockey.Tiny-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -526,13 +533,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FFAZKGAE8E;
 				INFOPLIST_FILE = "Tiny App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.construct.foodhero;
+				PRODUCT_BUNDLE_IDENTIFIER = "run.hockey.Tiny-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
