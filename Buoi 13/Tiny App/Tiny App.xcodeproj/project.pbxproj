@@ -70,6 +70,7 @@
 		B44A6647258CCC2D002BF8C0 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		B44A664B258CCC6D002BF8C0 /* Walkthrough.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Walkthrough.storyboard; sourceTree = "<group>"; };
 		B44A6652258CCDE7002BF8C0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B45E678625B8384F00E9ABB0 /* Tiny App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Tiny App.entitlements"; sourceTree = "<group>"; };
 		B460F43C259A013000972969 /* OtherHomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherHomeCell.swift; sourceTree = "<group>"; };
 		B460F43F259A039A00972969 /* OtherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherTableViewCell.swift; sourceTree = "<group>"; };
 		B460F440259A039A00972969 /* OtherTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OtherTableViewCell.xib; sourceTree = "<group>"; };
@@ -132,6 +133,7 @@
 		B44A662B258CCB86002BF8C0 /* Tiny App */ = {
 			isa = PBXGroup;
 			children = (
+				B45E678625B8384F00E9ABB0 /* Tiny App.entitlements */,
 				B44A6641258CCBAC002BF8C0 /* Features */,
 				B44A662C258CCB86002BF8C0 /* AppDelegate.swift */,
 				B44A662E258CCB86002BF8C0 /* SceneDelegate.swift */,
@@ -514,13 +516,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Tiny App/Tiny App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FFAZKGAE8E;
 				INFOPLIST_FILE = "Tiny App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "run.hockey.Tiny-App";
+				PRODUCT_BUNDLE_IDENTIFIER = com.construct.foodhero;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -532,13 +536,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Tiny App/Tiny App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FFAZKGAE8E;
 				INFOPLIST_FILE = "Tiny App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "run.hockey.Tiny-App";
+				PRODUCT_BUNDLE_IDENTIFIER = com.construct.foodhero;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
